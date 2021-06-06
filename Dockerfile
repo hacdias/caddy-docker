@@ -1,6 +1,6 @@
 FROM golang:1.15.2-buster
 
-ENV CADDY_VERSION v2.3.0
+ENV CADDY_VERSION v2.4.1
 
 RUN go get -u github.com/caddyserver/xcaddy/cmd/xcaddy; \
   xcaddy build $CADDY_VERSION --with github.com/caddy-dns/cloudflare; \
